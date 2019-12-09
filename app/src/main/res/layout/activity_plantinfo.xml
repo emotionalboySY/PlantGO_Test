@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/plantName"
+        android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:textColor="@color/GrayMain"
+        android:fontFamily="@font/maplestoryb" />
+
+    <ImageView
+        android:id="@+id/plantImage"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/plantInfo_Location"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/GrayMain"
+        android:fontFamily="@font/maplestoryl"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/plantInfo_Watering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/GrayMain"
+        android:fontFamily="@font/maplestoryl"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/plantInfo_Temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/GrayMain"
+        android:fontFamily="@font/maplestoryl" />
+
+    <TextView
+        android:id="@+id/plantInfo_Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/GrayMain"
+        android:fontFamily="@font/maplestoryl" />
+
+
+    <Button
+        android:id="@+id/plantToMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 식물로 만들자!"
+        android:textSize="30sp"
+        android:fontFamily="@font/maplestoryb"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/PI_to_MP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내 식물 보러 가기"
+        android:textSize="30sp"
+        android:fontFamily="@font/maplestoryb"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

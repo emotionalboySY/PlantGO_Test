@@ -1,0 +1,215 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPlantActivity">
+
+    <Button
+        android:id="@+id/mpinfo_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_myPlant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/maplestoryb"
+        android:gravity="center_horizontal"
+        android:text="@string/my_plant_family"
+        android:textColor="@color/GrayMain"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plantNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0"
+        android:fontFamily="@font/maplestoryb"
+        android:gravity="center"
+        android:textColor="@color/GrayMain"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_myPlant" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="40dp"
+        app:layout_constraintBottom_toTopOf="@id/plantEmotion"
+        app:layout_constraintTop_toBottomOf="@id/plantNickName">
+
+        <TextView
+            android:id="@+id/plantNameF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_name"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/plantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/plantNameF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/plantAddDateF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plantNameF"
+            android:layout_marginTop="@dimen/plantinfo_sensor_margin"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_date"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/plantAddDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/plantAddDateF"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/plantAddDateF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/sensorLightF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plantAddDateF"
+            android:layout_marginTop="@dimen/plantinfo_sensor_margin"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_light"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorLightF"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/sensorLightF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorTempF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorLightF"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/plantinfo_sensor_gap"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_temp"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorLightF"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/sensorTempF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorHumidF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sensorLightF"
+            android:layout_marginTop="@dimen/plantinfo_sensor_margin"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_humid"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorHumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorHumidF"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/sensorHumidF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorSoilF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorHumidF"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/plantinfo_sensor_gap"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_soil"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorSoil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorHumidF"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/sensorSoilF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorDustF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sensorHumidF"
+            android:layout_marginTop="@dimen/plantinfo_sensor_margin"
+            android:fontFamily="@font/maplestoryl"
+            android:text="@string/sensor_dust"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sensorDust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sensorDustF"
+            android:layout_marginStart="@dimen/plantingo_sensor_value_gap"
+            android:layout_toEndOf="@id/sensorDustF"
+            android:fontFamily="@font/maplestoryl"
+            android:textColor="@color/GrayMain"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/plantEmotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/interaction_good"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
