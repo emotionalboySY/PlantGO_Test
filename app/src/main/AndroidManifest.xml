@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.capstone.plantgo_test">
+    package="com.capstone.plantgo">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.capstone.plantgo_test.SplashActivity"
+            android:name="com.capstone.plantgo.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -23,30 +23,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.capstone.plantgo_test.MainActivity"
+            android:name="com.capstone.plantgo.MainActivity"
             android:launchMode="singleTop"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.capstone.plantgo_test.SignInActivity"
+            android:name="com.capstone.plantgo.SignInActivity"
             android:label="로그인"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.capstone.plantgo_test.MyPlantActivity"
+            android:name="com.capstone.plantgo.MyPlantActivity"
             android:launchMode="singleTop"
             android:label="내 식물 관리"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.capstone.plantgo_test.PlantBookActivity"
+            android:name="com.capstone.plantgo.PlantBookActivity"
             android:launchMode="singleTop"
             android:label="식물도감 보기"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.capstone.plantgo_test.PlantInfoActivity"
+            android:name="com.capstone.plantgo.PlantInfoActivity"
             android:label="식물 정보 보기"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.capstone.plantgo_test.MyPlantInfoActivity"
+            android:name="com.capstone.plantgo.MyPlantInfoActivity"
             android:launchMode="singleTop"
             android:label="내 식물 정보"
             android:theme="@style/AppTheme.NoActionBar" />

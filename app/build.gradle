@@ -5,7 +5,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.capstone.plantgo_test"
+        applicationId "com.capstone.plantgo"
         minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
