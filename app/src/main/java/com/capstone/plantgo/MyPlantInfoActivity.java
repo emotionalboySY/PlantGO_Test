@@ -25,7 +25,6 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MyPlantInfoActivity extends AppCompatActivity {
 
     TextView plantNickName, plantName, addDate, sensorLight, sensorTemp, sensorHumid, sensorSoil, sensorDust;
-    Uri best, good, nowater, angry, nolight;
     ImageView plantEmotion;
     Intent prevIntent;
     String address;
@@ -64,12 +63,6 @@ public class MyPlantInfoActivity extends AppCompatActivity {
         ishumid = true;
         istemp = true;
         iswater = true;
-
-        best = Uri.parse("https://firebasestorage.googleapis.com/v0/b/capstone-plantgo.appspot.com/o/plantEmotion%2Finteraction_best.png?alt=media&token=a48eecc5-4bed-482b-9aa8-d48640a11cbe");
-        good = Uri.parse("https://firebasestorage.googleapis.com/v0/b/capstone-plantgo.appspot.com/o/plantEmotion%2Finteraction_good.png?alt=media&token=1187f3e7-c050-4154-8024-22d0bad323fb");
-        nowater = Uri.parse("https://firebasestorage.googleapis.com/v0/b/capstone-plantgo.appspot.com/o/plantEmotion%2Finteraction_nowater.png?alt=media&token=12f9079b-2229-4170-9fa8-d97e2337cb4e");
-        nolight = Uri.parse("https://firebasestorage.googleapis.com/v0/b/capstone-plantgo.appspot.com/o/plantEmotion%2Finteraction_nolight.png?alt=media&token=4429841b-3516-48de-a45c-0913fd53b85d");
-        angry = Uri.parse("https://firebasestorage.googleapis.com/v0/b/capstone-plantgo.appspot.com/o/plantEmotion%2Finteraction_manyproblem.png?alt=media&token=162a95e7-ef9b-4585-9b9b-31f25a9a20d0");
 
         toHome = (Button) findViewById(R.id.mpinfo_home);
         toHome.setOnClickListener(new View.OnClickListener() {
